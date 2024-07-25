@@ -1,0 +1,917 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Electric Cars, Solar & Clean Energy | Tesla</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="./Assets/media/images/tesla.png" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css"
+    />
+    <script src="https://unpkg.com/tailwindcss-cdn@3.4.3/tailwindcss.js"></script>
+  </head>
+
+  <body theme="white">
+    <div class="counter">
+      <h1>0</h1>
+      <div class="loader-welcome">
+        <img src="./Assets/media/images/tesla-svgrepo-com.svg" alt="" />
+      </div>
+    </div>
+
+    <div class="loader-overlay">
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+    </div>
+
+    <main id="main" class="relative w-full overflow-clip">
+      <div id="main-nav">
+        <div class="section1">
+          <div class="main-links">
+            <div class="main-link">
+              <h2>Vehicles</h2>
+              <i class="ri-arrow-right-up-line"></i>
+            </div>
+            <div class="main-link">
+              <h2>Energy</h2>
+              <i class="ri-arrow-right-up-line"></i>
+            </div>
+            <div class="main-link">
+              <h2>Charging Station</h2>
+              <i class="ri-arrow-right-up-line"></i>
+            </div>
+            <div class="main-link">
+              <h2>Discover</h2>
+              <i class="ri-arrow-right-up-line"></i>
+            </div>
+            <div class="main-link">
+              <h2>Shop</h2>
+              <i class="ri-arrow-right-up-line"></i>
+            </div>
+          </div>
+
+          <div class="main-contact">
+            <h2>Contact Us</h2>
+            <h2>Careers</h2>
+            <h2>Log in to Tesla</h2>
+          </div>
+
+          <div class="choose-country">
+            <i class="ri-global-line"></i>
+            <h2>Country</h2>
+            <span><i class="ri-arrow-up-line"></i></span>
+          </div>
+        </div>
+
+        <div class="section2">
+          <div class="section2-p">
+            <h2>Do you want to become a partner?</h2>
+            <span>
+              <h3>Learn More</h3>
+              <i class="ri-arrow-right-line"></i>
+            </span>
+          </div>
+          <div class="section2-p">
+            <h2>For Existing Partners:</h2>
+            <span>
+              <h3>Learn More</h3>
+              <i class="ri-arrow-right-line"></i>
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <nav id="nav">
+        <div class="nav-left">
+          <a href="#">
+            <svg viewBox="0 0 342 35" xmlns="http://www.w3.org/2000/svg">
+              <path
+                class="tesla-svg-path"
+                fill="currentColor"
+                d="M0 .1a9.7 9.7 0 0 0 7 7h11l.5.1v27.6h6.8V7.3L26 7h11a9.8 9.8 0 0 0 7-7H0zm238.6 0h-6.8v34.8H263a9.7 9.7 0 0 0 6-6.8h-30.3V0zm-52.3 6.8c3.6-1 6.6-3.8 7.4-6.9l-38.1.1v20.6h31.1v7.2h-24.4a13.6 13.6 0 0 0-8.7 7h39.9v-21h-31.2v-7zm116.2 28h6.7v-14h24.6v14h6.7v-21h-38zM85.3 7h26a9.6 9.6 0 0 0 7.1-7H78.3a9.6 9.6 0 0 0 7 7m0 13.8h26a9.6 9.6 0 0 0 7.1-7H78.3a9.6 9.6 0 0 0 7 7m0 14.1h26a9.6 9.6 0 0 0 7.1-7H78.3a9.6 9.6 0 0 0 7 7M308.5 7h26a9.6 9.6 0 0 0 7-7h-40a9.6 9.6 0 0 0 7 7"
+              ></path>
+            </svg>
+          </a>
+
+          <div id="hide-hoja">
+            <a href="#" class="custom-underline">Vehicles</a>
+            <a href="#" class="custom-underline">Energy</a>
+            <a href="#" class="custom-underline">Charging</a>
+          </div>
+        </div>
+
+        <div class="nav-right">
+          <a href="#" class="tesla-link">
+            <span class="tesla-span">
+              <span class="get-tesla">Get Tesla</span>
+              <span class="inner-icon">
+                <svg
+                  viewBox="0 0 16 16"
+                  stroke="#fff"
+                  vector-effect="non-scaling-stroke"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-[0.6rem] plus-icon"
+                >
+                  <path
+                    d="M0 8h16M8 0v16"
+                    vector-effect="non-scaling-stroke"
+                  ></path>
+                </svg>
+              </span>
+            </span>
+          </a>
+          <button
+            class="burger-button text-asphalt bg-transparent w-[2.875rem] group h-[2.875rem] rounded-full flex items-center justify-center z-60 transition-colors"
+          >
+            <span class="w-6 h-4 relative">
+              <span
+                class="line1 w-full h-[2px] bg-current absolute top-0 left-0 will-change-transform transition-all translate-y-0"
+              ></span>
+              <span
+                class="line2 w-full h-[2px] bg-current absolute top-1/2 left-0 -translate-y-1/2 transition-all"
+              ></span>
+              <span
+                class="line3 w-full h-[2px] bg-current absolute bottom-0 left-0 will-change-transform transition-all translate-y-0"
+              ></span>
+            </span>
+          </button>
+        </div>
+      </nav>
+
+      <div class="home">
+        <div class="sticky">
+          <div class="content">
+            <h1 data-split="">
+              Driving the future with sustainable energy and unparalleled
+              electric performance for a better tomorrow.
+            </h1>
+            <video
+              autoplay
+              loop
+              muted
+              id="bg-image"
+              src="./Assets/media/videos/landing.mp4"
+              alt=""
+            ></video>
+          </div>
+          <div class="content">
+            <h1 data-split="">
+              Discover the future of driving with Tesla's state-of-the-art
+              electric vehicles and renewable energy.
+            </h1>
+          </div>
+          <div class="content" id="pinned-content">
+            <h1 data-split="">
+              Revolutionizing the automotive industry with Tesla's innovative
+              electric vehicles and commitment to sustainability
+            </h1>
+          </div>
+        </div>
+      </div>
+
+      <div id="page2">
+        <h1>Fully charged for your</h1>
+        <h1>next adventure</h1>
+
+        <div id="page2-p1">
+          <h2>[ FUTURE READY ]</h2>
+          <div class="page2-p1-right">
+            <h2>What is Tesla’s Autopilot and how does it work?</h2>
+            <p>
+              Tesla’s Autopilot is an advanced driver-assistance system that
+              enhances safety and convenience. It includes Traffic-Aware Cruise
+              Control and Autosteer, using cameras and vision processing for a
+              comprehensive view. The Full Self-Driving package adds features
+              like Navigate on Autopilot and Smart Summon. While reducing driver
+              workload, it requires active supervision and is not fully
+              autonomous. Tesla continuously updates these features, aiming for
+              full autonomy in the future.
+            </p>
+          </div>
+        </div>
+
+        <div id="scroll-effect">
+          <div class="scroll-effect-container">
+            <div class="scroll-effect-elem">
+              <h1>Tesla Model S</h1>
+              <h2>From $66,490</h2>
+              <h3>[ A revolutionary electric car ]</h3>
+              <div class="scroll-effect-elem-img">
+                <div class="clipped-corner">
+                  <img src="./Assets/media/images/s1.avif" alt="" />
+                </div>
+                <div>
+                  <div class="clipped-corner">
+                    <img src="./Assets/media/images/s2.avif" alt="" />
+                  </div>
+                </div>
+              </div>
+              <p>
+                The Tesla Model S is a battery electric executive car with a
+                liftback body style. It features a dual-motor, all-wheel drive
+                layout, providing impressive performance and long range. Since
+                its launch in 2012, it has set benchmarks in the electric
+                vehicle market1
+              </p>
+            </div>
+
+            <div class="scroll-effect-elem">
+              <h1>Tesla Model Y</h1>
+              <h2>From $31,490</h2>
+              <h3>[ A versatile electric SUV ]</h3>
+              <div class="scroll-effect-elem-img">
+                <div class="clipped-corner">
+                  <img src="./Assets/media/images/my1.avif" alt="" />
+                </div>
+                <div>
+                  <div class="clipped-corner">
+                    <img src="./Assets/media/images/my2.avif" alt="" />
+                  </div>
+                </div>
+              </div>
+              <p>
+                The Tesla Model Y is a mid-size crossover SUV with a fully
+                electric powertrain. It offers up to 320 miles of range and
+                advanced safety features. Launched in 2020, it combines
+                performance, spaciousness, and efficiency
+              </p>
+            </div>
+
+            <div class="scroll-effect-elem">
+              <h1>Tesla Cybertruck</h1>
+              <h2>From $66,490</h2>
+              <h3>[ A futuristic electric pickup. ]</h3>
+              <div class="scroll-effect-elem-img">
+                <div class="clipped-corner">
+                  <img src="./Assets/media/images/cyber1.avif" alt="" />
+                </div>
+                <div>
+                  <div class="clipped-corner">
+                    <img src="./Assets/media/images/cyber2.avif" alt="" />
+                  </div>
+                </div>
+              </div>
+              <p>
+                The Tesla Cybertruck is a full-size electric pickup truck with a
+                unique, angular design. It offers impressive performance,
+                including a range of up to 500 miles and a towing capacity of
+                14,000 pounds. Launched in 2023, it redefines the electric truck
+                market
+              </p>
+            </div>
+
+            <div class="scroll-effect-elem">
+              <h1>Tesla Model X</h1>
+              <h2>From $63,990</h2>
+              <h3>[ A powerful electric SUV ]</h3>
+              <div class="scroll-effect-elem-img">
+                <div class="clipped-corner">
+                  <img src="./Assets/media/images/mx 1.avif" alt="" />
+                </div>
+                <div>
+                  <div class="clipped-corner">
+                    <img src="./Assets/media/images/mx 2.avif" alt="" />
+                  </div>
+                </div>
+              </div>
+              <p>
+                The Tesla Model X is a mid-size luxury crossover SUV with a
+                fully electric powertrain. It features distinctive falcon-wing
+                doors and offers up to 335 miles of range. Launched in 2015, it
+                combines performance, spaciousness, and advanced technology
+              </p>
+            </div>
+
+            <div class="scroll-effect-elem">
+              <h1>Tesla Model 3 ( Standard )</h1>
+              <h2>From $29,990</h2>
+              <h3>[ An affordable electric sedan ]</h3>
+              <div class="scroll-effect-elem-img">
+                <div class="clipped-corner">
+                  <img src="./Assets/media/images/m3 1.avif" alt="" />
+                </div>
+                <div>
+                  <div class="clipped-corner">
+                    <img src="./Assets/media/images/m3 2.avif" alt="" />
+                  </div>
+                </div>
+              </div>
+              <p>
+                The Tesla Model 3 is a mid-size electric sedan with a fastback
+                design. It offers up to 341 miles of range and advanced safety
+                features. Launched in 2017, it aims to make electric vehicles
+                more accessible without compromising on performance
+              </p>
+            </div>
+
+            <div class="scroll-effect-elem">
+              <h1>Tesla Model 3 ( Performance )</h1>
+              <h2>From $42,490</h2>
+              <h3>[ A high-performance electric sedan ]</h3>
+              <div class="scroll-effect-elem-img">
+                <div class="clipped-corner">
+                  <img src="./Assets/media/images/m3 1.avif" alt="" />
+                </div>
+                <div>
+                  <div class="clipped-corner">
+                    <img src="./Assets/media/images/m3 2.avif" alt="" />
+                  </div>
+                </div>
+              </div>
+              <p>
+                The Tesla Model 3 Performance features dual motors delivering
+                510 horsepower and 0-60 mph in just 2.9 seconds. It offers a
+                range of up to 328 miles and includes advanced features like
+                adaptive suspension and performance brakes
+              </p>
+            </div>
+          </div>
+
+          <div id="scroll-right">
+            <div class="desk-img">
+              <img src="./Assets/media/images/model s.avif" alt="" />
+            </div>
+            <div class="desk-img">
+              <img src="./Assets/media/images/model y.avif" alt="" />
+            </div>
+            <div class="desk-img">
+              <img src="./Assets/media/images/cybertruck.avif" alt="" />
+            </div>
+            <div class="desk-img">
+              <img src="./Assets/media/images/model x.avif" alt="" />
+            </div>
+            <div class="desk-img">
+              <img src="./Assets/media/images/model3.avif" alt="" />
+            </div>
+            <div class="desk-img">
+              <img src="./Assets/media/images/m3p.avif" alt="" />
+            </div>
+          </div>
+        </div>
+
+        <div class="mobile-content">
+          <div class="mobile-elem">
+            <div class="mobile-elem-img">
+              <img src="./Assets/media/images/model s.avif" alt="" />
+            </div>
+            <h1>Tesla Model S</h1>
+            <h2>From $66,490</h2>
+            <h3>[ A revolutionary electric car ]</h3>
+            <p>
+              The Tesla Model S is a battery electric executive car with a
+              liftback body style. It features a dual-motor, all-wheel drive
+              layout, providing impressive performance and long range. Since its
+              launch in 2012, it has set benchmarks in the electric vehicle
+              market1
+            </p>
+          </div>
+
+          <div class="mobile-elem">
+            <div class="mobile-elem-img">
+              <img src="./Assets/media/images/model y.avif" alt="" />
+            </div>
+            <h1>Tesla Model Y</h1>
+            <h2>From $31,490</h2>
+            <h3>[ A versatile electric SUV ]</h3>
+            <p>
+              The Tesla Model Y is a mid-size crossover SUV with a fully
+              electric powertrain. It offers up to 320 miles of range and
+              advanced safety features. Launched in 2020, it combines
+              performance, spaciousness, and efficiency
+            </p>
+          </div>
+
+          <div class="mobile-elem">
+            <div class="mobile-elem-img">
+              <img src="./Assets/media/images/cybertruck.avif" alt="" />
+            </div>
+            <h1>Tesla Cybertruck</h1>
+            <h2>From $66,490</h2>
+            <h3>[ A futuristic electric pickup. ]</h3>
+            <p>
+              The Tesla Cybertruck is a full-size electric pickup truck with a
+              unique, angular design. It offers impressive performance,
+              including a range of up to 500 miles and a towing capacity of
+              14,000 pounds. Launched in 2023, it redefines the electric truck
+              market
+            </p>
+          </div>
+
+          <div class="mobile-elem">
+            <div class="mobile-elem-img">
+              <img src="./Assets/media/images/model x.avif" alt="" />
+            </div>
+            <h1>Tesla Model X</h1>
+            <h2>From $63,990</h2>
+            <h3>[ A powerful electric SUV ]</h3>
+            <p>
+              The Tesla Model X is a mid-size luxury crossover SUV with a fully
+              electric powertrain. It features distinctive falcon-wing doors and
+              offers up to 335 miles of range. Launched in 2015, it combines
+              performance, spaciousness, and advanced technology
+            </p>
+          </div>
+
+          <div class="mobile-elem">
+            <div class="mobile-elem-img">
+              <img src="./Assets/media/images/model3.avif" alt="" />
+            </div>
+            <h1>Tesla Model 3 ( Standard )</h1>
+            <h2>From $29,990</h2>
+            <h3>[ An affordable electric sedan ]</h3>
+            <p>
+              The Tesla Model 3 is a mid-size electric sedan with a fastback
+              design. It offers up to 341 miles of range and advanced safety
+              features. Launched in 2017, it aims to make electric vehicles more
+              accessible without compromising on performance
+            </p>
+          </div>
+
+          <div class="mobile-elem">
+            <div class="mobile-elem-img">
+              <img src="./Assets/media/images/m3p.avif" alt="" />
+            </div>
+            <h1>Tesla Model 3 ( Performance )</h1>
+            <h2>From $42,490</h2>
+            <h3>[ A high-performance electric sedan ]</h3>
+            <p>
+              The Tesla Model 3 Performance features dual motors delivering 510
+              horsepower and 0-60 mph in just 2.9 seconds. It offers a range of
+              up to 328 miles and includes advanced features like adaptive
+              suspension and performance brakes
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div id="canvas">
+        <img src="./Assets/media/images/canvas.avif" alt="" />
+        <canvas></canvas>
+      </div>
+
+      <div id="showcase">
+        <div id="showcase-pin" class="relative scale-1">
+          <div class="showcase-ctn" style="clip-path: inset(0%)">
+            <img
+              class="abs-img"
+              src="./Assets/media/images/Cybertrucklogo.svg"
+              alt=""
+            />
+            <img
+              class="h-full w-full object-cover"
+              src="./Assets/media/images/cybershow.avif"
+              alt=""
+            />
+          </div>
+          <div
+            class="showcase-video video absolute top-0 left-0 h-screen w-full z-0"
+          >
+            <video
+              autoplay
+              loop
+              muted
+              class="h-full w-full object-cover"
+              src="./Assets/media/videos/Cybertruck.mp4"
+            ></video>
+          </div>
+        </div>
+
+        <div id="showcase-scroll">
+          <h1></h1>
+          <div class="showcase-scroll-container">
+            <div class="showcase-scroll-img-container">
+              <div
+                class="showcase-scroll-img h-[21vw] w-[35vw] md:h-[40vh] md:w-[30vw]"
+              >
+                <img
+                  class="h-full w-full object-cover"
+                  src="./Assets/media/images/showcase1.avif"
+                  alt=""
+                />
+              </div>
+            </div>
+
+            <div class="showcase-scroll-img-container">
+              <div
+                class="showcase-scroll-img h-[21vw] w-[35vw] md:h-[30vh] md:w-[27vw] overflow-hidden rounded-lg"
+              >
+                <img
+                  class="h-full w-full object-cover"
+                  src="./Assets/media/images/showcase2.avif"
+                  alt=""
+                />
+              </div>
+            </div>
+
+            <div class="showcase-scroll-img-container md:ml-12 relative">
+              <img
+                class="showcase-scroll-img h-48 w-48 object-cover"
+                src="./Assets/media/images/arrow.svg"
+                alt=""
+              />
+              <div class="overflow-hidden absolute">
+                <img
+                  class="texte-circle-img h-52 w-48 object-cover"
+                  src="./Assets/media/images/Texte-Circle.svg"
+                  alt=""
+                />
+              </div>
+            </div>
+
+            <div class="showcase-scroll-img-container">
+              <div
+                class="showcase-scroll-img h-[21vw] w-[35vw] md:h-[30vh] md:w-[27vw] overflow-hidden rounded-lg"
+              >
+                <img
+                  class="h-full w-full object-cover"
+                  src="./Assets/media/images/showcase3.avif"
+                  alt=""
+                />
+              </div>
+            </div>
+
+            <div class="showcase-scroll-img-container">
+              <div
+                class="showcase-scroll-img h-[21vw] w-[35vw] md:h-[30vh] md:w-[27vw] overflow-hidden rounded-lg"
+              >
+                <img
+                  class="h-full w-full object-cover"
+                  src="./Assets/media/images/showcase4.avif"
+                  alt=""
+                />
+              </div>
+            </div>
+
+            <div class="showcase-scroll-img-container">
+              <div
+                class="showcase-scroll-img h-[21vw] w-[35vw] md:h-[30vh] md:w-[27vw] overflow-hidden rounded-lg"
+              >
+                <img
+                  class="h-full w-full object-cover"
+                  src="./Assets/media/images/showcase5.avif"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+          <h2></h2>
+        </div>
+      </div>
+
+      <div id="page4">
+        <div class="energy-header">
+          <h1>Tesla's energy</h1>
+          <h1>initiative</h1>
+          <h1>revolutionizes</h1>
+          <h1>sustainable power</h1>
+          <h1>solutions globally</h1>
+        </div>
+
+        <div class="slides-container">
+          <div class="relative w-full">
+            <div class="slides">
+              <div class="slide slide1">
+                <video
+                  autoplay
+                  loop
+                  muted
+                  class="h-full w-full object-cover"
+                  src="./Assets/media/videos/solar-roof-main-hero-desktop.webm"
+                ></video>
+                <div class="overlay">
+                  <h1>Solar Roof</h1>
+
+                  <div class="slide1-info">
+                    <section>
+                      <i class="ri-sun-foggy-fill"></i>
+                      <h2>
+                        Beautiful <br />
+                        Solar
+                      </h2>
+                    </section>
+                    <section>
+                      <h1>25-Year</h1>
+                      <h2>
+                        Tile <br />
+                        Warranty
+                      </h2>
+                    </section>
+                    <section>
+                      <h1>24/7</h1>
+                      <h2>
+                        Outage <br />
+                        Protection
+                      </h2>
+                    </section>
+                    <button>Learn More</button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="slide slide-col slide2-3">
+                <img
+                  class="w-full object-cover"
+                  src="./Assets/media/images/solar-roof-protection.avif"
+                  alt=""
+                />
+                <div class="slide2-3-info">
+                  <section>
+                    <h2>Energy Storage</h2>
+                    <h1>Protection Against Outages</h1>
+                    <button>Learn More</button>
+                  </section>
+                  <section>
+                    <p>
+                      Powerwall is a compact home battery that is bundled with
+                      Solar Roof, providing you with 24/7 energy security. It
+                      stores the energy you produce with Solar Roof so you can
+                      power your home anytime—at night or during an outage.
+                    </p>
+                  </section>
+                </div>
+              </div>
+
+              <div class="slide slide-col slide2-3">
+                <img
+                  class="w-full object-cover"
+                  src="./Assets/media/images/maximum-solar-production.avif"
+                  alt=""
+                />
+                <div class="slide2-3-info">
+                  <section>
+                    <h2>Efficiency</h2>
+                    <h1>Maximum Solar Production</h1>
+                    <button>Learn More</button>
+                  </section>
+                  <section>
+                    <p>
+                      Generate the most energy possible, even on roofs with
+                      complicated angles and intermittent sunlight. Glass solar
+                      tiles and architectural-grade steel tiles, vent covers and
+                      ridge caps come together to form a roof that is both
+                      durable and powerful. Combine your Solar Roof with
+                      Powerwall.
+                    </p>
+                  </section>
+                </div>
+              </div>
+
+              <div class="slide slide4-5">
+                <img
+                  class="h-full w-full object-cover"
+                  src="./Assets/media/images/powerwall.avif"
+                />
+                <div class="slide4-5-info">
+                  <h1>PowerWall</h1>
+                  <h2>Power Your Home, Save Money</h2>
+
+                  <div class="info-bottom">
+                    <section>
+                      <p>
+                        Powerwall is a compact home battery that stores energy
+                        generated by solar or from the grid. You can use this
+                        energy to power the devices and appliances in your home
+                        day and night, during outages or when you want to go
+                        off-grid.
+                      </p>
+                    </section>
+                    <button>Learn More</button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="slide slide4-5">
+                <img
+                  class="h-full w-full object-cover"
+                  src="./Assets/media/images/energy-thats-there.avif"
+                />
+                <div class="slide4-5-info">
+                  <h1>PowerWall</h1>
+                  <h2>Energy That’s There When You Need It</h2>
+                  <div class="info-bottom">
+                    <section>
+                      <p>
+                        Backup protection only works when your backup system is
+                        reliable. Powerwall is designed to withstand extreme
+                        weather conditions and harsh environments. It can
+                        maintain normal operation in cold temperatures, high
+                        humidity and flooding in two feet of water.
+                      </p>
+                    </section>
+                    <button>Learn More</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="page5">
+        <div class="page5-header">
+          <h1>Explore Our Chargers</h1>
+          <h1>Freedom to go Anywhere</h1>
+        </div>
+
+        <div id="canvas1">
+          <img
+            class="h-full w-full object-cover -z-10"
+            src="./Assets/media/canvas/Charging/aspose_video_133661107269338471_out0001.jpg"
+            alt=""
+          />
+          <canvas></canvas>
+        </div>
+
+        <div class="charge-container">
+          <div id="charge-pin" class="relative">
+            <div id="charge1" style="clip-path: inset(0%)">
+              <div class="charge-content">
+                <h1>CHARGING</h1>
+                <div class="charge-media">
+                  <video
+                    autoplay
+                    loop
+                    muted
+                    class="h-full w-full object-cover"
+                    src="./Assets/media/videos/Charging-Main-Hero-Desktop-NA-JP-KR-2800x1800.mp4"
+                    alt=""
+                  ></video>
+                </div>
+                <div class="charge-info">
+                  <h3>Charge</h3>
+                  <h2>Plug In, Charge and Go</h2>
+                  <p>
+                    With plenty of range for both daily drives and road trips,
+                    Tesla vehicles get you where you want to go. Charging is
+                    fast, convenient and available anywhere with electricity.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div id="charge2" style="clip-path: inset(0%)">
+              <div class="charge-content">
+                <h1>HOME CHARGER</h1>
+                <div class="charge-media">
+                  <img
+                    class="h-full w-full object-cover"
+                    src="./Assets/media/images/home-charging-energize-savings-desktop.avif"
+                    alt=""
+                  />
+                </div>
+                <div class="charge-info">
+                  <h3>Convenience</h3>
+                  <h2>Charge Anytime</h2>
+                  <p>
+                    Wall Connector is our fastest way to charge your electric
+                    vehicle, whether a Tesla or non-Tesla, at home. For homes
+                    with more than one electric vehicle, multiple Wall
+                    Connectors can manage power output to meet charging needs.
+                  </p>
+                </div>
+              </div>
+              <img
+                class="h-full w-full object-cover"
+                src="./Assets/media/images/whitee.jpg"
+                alt=""
+              />
+            </div>
+
+            <div class="absolute top-0 left-0 h-screen w-full z-0" id="charge3">
+              <div class="charge-content">
+                <h1>SUPER CHARGER</h1>
+                <div class="charge-media">
+                  <video
+                    autoplay
+                    loop
+                    muted
+                    class="h-full w-full object-cover"
+                    src="./Assets/media/videos/Supercharger-Main-Hero-Desktop-1920x1080.mp4"
+                    alt=""
+                  ></video>
+                </div>
+                <div class="charge-info">
+                  <h3>Speed</h3>
+                  <h2>Stay on the Road</h2>
+                  <p>
+                    Superchargers can add up to 200 miles of range in just 15
+                    minutes.With a broad network of fast charging, automatic
+                    battery preconditioning and the exceptional range of every
+                    Tesla car, you’ll spend even more time on the road.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="relative w-full mt-20" id="page6">
+        <div class="page6-pin">
+          <h1>
+            A product of Tesla is always <br />
+            innovative electric technology.
+          </h1>
+        </div>
+        <div class="page6-scroll">
+          <img
+            class="absolute top-[130%] left-[4%] sm:h-[23%] sm:w-[30%] h-[20%] lg:h-[30%] lg:w-[20%] md:h-[27%] md:w-[30%] rounded-lg"
+            src="./Assets/media/images/cybertruck.avif"
+            alt=""
+          />
+
+          <img
+            class="absolute top-[145%] right-[3%] h-[20%] sm:h-[23%] sm:w-[30%] lg:h-[30%] lg:w-[20%] md:h-[27%] md:w-[30%] rounded-lg"
+            src="./Assets/media/images/model s.avif"
+            alt=""
+          />
+
+          <img
+            id="pin-img"
+            class="absolute scale-[0.3] h-screen w-full object-cover z-20"
+            src="./Assets/media/images/page6bg.avif"
+            alt=""
+          />
+
+          <img
+            class="absolute top-[180%] left-[2%] h-[20%] sm:h-[23%] sm:w-[30%] lg:h-[30%] lg:w-[20%] md:h-[27%] md:w-[30%] rounded-lg object-cover"
+            src="./Assets/media/images/model y.avif"
+            alt=""
+          />
+
+          <img
+            class="absolute top-[195%] right-[7%] h-[20%] sm:h-[23%] sm:w-[30%] lg:h-[30%] lg:w-[20%] md:h-[27%] md:w-[30%] rounded-lg"
+            src="./Assets/media/images/model3.avif"
+            alt=""
+          />
+        </div>
+      </div>
+
+      <div class="footer">
+        <div class="foot-content">
+          <div class="left">
+            <div class="list">
+              <h2>Home</h2>
+              <h2>Vehicles</h2>
+              <h2>Energy</h2>
+              <h2>About Us</h2>
+              <h2>Contact Us</h2>
+            </div>
+            <div class="list">
+              <h2>Facebook</h2>
+              <h2>Twitter</h2>
+              <h2>LinkedIn</h2>
+              <h2>Instagram</h2>
+              <h2>Youtube</h2>
+            </div>
+          </div>
+          <div class="right">
+            <h1>
+              Our newsletters are a concentrated blast of all the latest
+              insights from Tesla.
+            </h1>
+            <h2>No spam – Unsubscribe anytime.</h2>
+            <div class="input flex gap-3">
+              <input placeholder="First name" type="text" />
+              <input placeholder="Last name" type="text" />
+              <button>Subscribe</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="foot-scroll">
+          <a href="#">
+            <svg viewBox="0 0 342 35" xmlns="http://www.w3.org/2000/svg">
+              <path
+                class="tesla-svg-path"
+                fill="currentColor"
+                d="M0 .1a9.7 9.7 0 0 0 7 7h11l.5.1v27.6h6.8V7.3L26 7h11a9.8 9.8 0 0 0 7-7H0zm238.6 0h-6.8v34.8H263a9.7 9.7 0 0 0 6-6.8h-30.3V0zm-52.3 6.8c3.6-1 6.6-3.8 7.4-6.9l-38.1.1v20.6h31.1v7.2h-24.4a13.6 13.6 0 0 0-8.7 7h39.9v-21h-31.2v-7zm116.2 28h6.7v-14h24.6v14h6.7v-21h-38zM85.3 7h26a9.6 9.6 0 0 0 7.1-7H78.3a9.6 9.6 0 0 0 7 7m0 13.8h26a9.6 9.6 0 0 0 7.1-7H78.3a9.6 9.6 0 0 0 7 7m0 14.1h26a9.6 9.6 0 0 0 7.1-7H78.3a9.6 9.6 0 0 0 7 7M308.5 7h26a9.6 9.6 0 0 0 7-7h-40a9.6 9.6 0 0 0 7 7"
+              ></path>
+            </svg>
+          </a>
+          <h1>INNOVATIVE - FUTURISTIC - SUSTAINABLE</h1>
+        </div>
+      </div>
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/split-type"></script>
+    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@0.2.28/bundled/lenis.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
